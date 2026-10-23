@@ -20,23 +20,28 @@
         <div class="nav-container">
             <div class="brand-logo">
                 <span class="logo-text">SHEHAB</span>
-                <span class="badge">طبيب الودن</span>
+                <span class="badge" data-key="badge">طبيب الودن</span>
             </div>
             
             <nav class="nav-links">
-                <a href="#about">عن شهاب</a>
-                <a href="#tracks">التراكات</a>
-                <a href="#collabs">التعاونات</a>
-                <a href="#live">الحفلات</a>
+                <a href="#about" data-key="navAbout">عن شهاب</a>
+                <a href="#tracks" data-key="navTracks">التراكات</a>
+                <a href="#collabs" data-key="navCollabs">التعاونات</a>
+                <a href="#live" data-key="navLive">الحفلات</a>
             </nav>
 
             <div class="nav-actions">
+                <!-- Language Toggle Button -->
+                <button id="langToggle" class="btn-lang" title="Switch Language">
+                    <i class="fa-solid fa-globe"></i> <span id="langLabel">EN</span>
+                </button>
+
                 <!-- Theme Toggle Button -->
                 <button id="themeToggle" class="btn-theme" title="تغيير الوضع">
                     <i class="fa-solid fa-moon" id="themeIcon"></i>
                 </button>
 
-                <a href="#tracks" class="btn-primary">
+                <a href="#tracks" class="btn-primary" data-key="btnListen">
                     <i class="fa-solid fa-play"></i> استمع للـ Vibing
                 </a>
             </div>
@@ -47,14 +52,14 @@
     <section class="hero-section">
         <div class="hero-text">
             <div class="tag">
-                <i class="fa-solid fa-compass"></i> ابن سيدي بشر — الإسكندرية (30 مارس 1999)
+                <i class="fa-solid fa-compass"></i> <span data-key="heroTag">ابن سيدي بشر — الإسكندرية (30 مارس 1999)</span>
             </div>
-            <h1>شهاب السيد <br><span class="glow-title">"شهاب الديب"</span></h1>
-            <p>
+            <h1><span data-key="heroName">شهاب السيد</span> <br><span class="glow-title" data-key="heroTitle">"شهاب الديب"</span></h1>
+            <p data-key="heroDesc">
                 رائد مزج موسيقى الـ Trap الهادئة مع ألحان الـ R&B السلسة في مشهد الراب المصري، ومبتكر حالة الـ Mood والـ Chill المفضلة للاسترخاء والقيادة.
             </p>
             <div class="hero-btns">
-                <a href="#tracks" class="btn-accent">
+                <a href="#tracks" class="btn-accent" data-key="heroBtn">
                     <i class="fa-solid fa-music"></i> استكشف التراكات
                 </a>
             </div>
@@ -66,7 +71,7 @@
                 <img src="assets/images/shehab-hero.jpg" onerror="this.src='https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80'" alt="شهاب" class="hero-img">
                 <div class="hero-card-info glass-card">
                     <div>
-                        <span class="sub-text">الانطلاقة الحقيقية</span>
+                        <span class="sub-text" data-key="cardSub">الانطلاقة الحقيقية</span>
                         <p class="main-text">2019 — My Zone & 7asana</p>
                     </div>
                     <span class="genre-badge">Trap / R&B</span>
@@ -75,30 +80,30 @@
         </div>
     </section>
 
-    <!-- Bio Section (Large Row Cards) -->
+    <!-- Bio Section -->
     <section id="about" class="section-container">
         <div class="grid-about">
             <div class="glass-card hover-card bio-card">
                 <div class="icon-box cyan"><i class="fa-solid fa-user-ninja"></i></div>
                 <div class="bio-content">
-                    <h3>الهوية والألقاب</h3>
-                    <p>يُعرف بـ <strong>"طبيب الودن"</strong> و<strong>"شهاب الديب"</strong>. بدأ مشواره الفني على الإنترنت عام 2019 وحظي بإنتباه واسع بفضل كاريزما صوته واستخدامه المتقن لتقنية الـ Auto-Tune.</p>
+                    <h3 data-key="bio1Title">الهوية والألقاب</h3>
+                    <p data-key="bio1Desc">يُعرف بـ <strong>"طبيب الودن"</strong> و<strong>"شهاب الديب"</strong>. بدأ مشواره الفني على الإنترنت عام 2019 وحظي بإنتباه واسع بفضل كاريزما صوته واستخدامه المتقن لتقنية الـ Auto-Tune.</p>
                 </div>
             </div>
 
             <div class="glass-card hover-card bio-card">
                 <div class="icon-box purple"><i class="fa-solid fa-sliders"></i></div>
                 <div class="bio-content">
-                    <h3>الأسلوب الموسيقي</h3>
-                    <p>دمج موسيقى التراپ (Trap) الهادئة مع ألحان الـ R&B السلسة، معتمداً على تهيئة "المود" أو الحالة المزاجية للمستمع التي أصبحت الخيار المفضل أثناء القيادة والاسترخاء.</p>
+                    <h3 data-key="bio2Title">الأسلوب الموسيقي</h3>
+                    <p data-key="bio2Desc">دمج موسيقى التراپ (Trap) الهادئة مع ألحان الـ R&B السلسة، معتمداً على تهيئة "المود" أو الحالة المزاجية للمستمع التي أصبحت الخيار المفضل أثناء القيادة والاسترخاء.</p>
                 </div>
             </div>
 
             <div class="glass-card hover-card bio-card">
                 <div class="icon-box pink"><i class="fa-solid fa-bolt"></i></div>
                 <div class="bio-content">
-                    <h3>البداية والإنطلاقة</h3>
-                    <p>انطلق بقوة عبر تراك "My Zone"، ثم أعقبها بأغنية "7asana" التي مزج فيها بين العربية والإنجليزية بطريقة مبتكرة أحدثت تفاعلاً واسعاً داخل المشهد.</p>
+                    <h3 data-key="bio3Title">البداية والإنطلاقة</h3>
+                    <p data-key="bio3Desc">انطلق بقوة عبر تراك "My Zone"، ثم أعقبها بأغنية "7asana" التي مزج فيها بين العربية والإنجليزية بطريقة مبتكرة أحدثت تفاعلاً واسعاً داخل المشهد.</p>
                 </div>
             </div>
         </div>
@@ -108,11 +113,11 @@
     <section id="tracks" class="section-container">
         <div class="section-header">
             <div>
-                <span class="sub-title">المكتبة الموسيقية</span>
-                <h2>أشهر تراكات شهاب</h2>
+                <span class="sub-title" data-key="tracksSub">المكتبة الموسيقية</span>
+                <h2 data-key="tracksTitle">أشهر تراكات شهاب</h2>
             </div>
             <div class="search-box">
-                <input type="text" id="searchInput" onkeyup="filterTracks()" placeholder="بحث عن تراك...">
+                <input type="text" id="searchInput" onkeyup="filterTracks()" placeholder="بحث عن تراك..." data-key-placeholder="searchPlaceholder">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
         </div>
@@ -124,11 +129,11 @@
                 <div class="img-wrapper">
                     <img src="assets/images/3l3mom.jpg" onerror="this.src='https://images.unsplash.com/photo-1598387993441-a364f854c3e1?auto=format&fit=crop&w=400&q=80'">
                 </div>
-                <h4 class="track-title">عالعموم (3l3mom)</h4>
+                <h4 class="track-title" data-key="track1">عالعموم (3l3mom)</h4>
                 <p class="track-artist">Shehab</p>
                 <div class="card-footer">
                     <span class="badge-tag cyan">Single</span>
-                    <button onclick="playAudio('assets/audio/3l3mom.mp3', 'عالعموم (3l3mom)', 'Shehab', 0)" class="btn-play">
+                    <button onclick="playAudio('assets/audio/3l3mom.mp3', '3l3mom', 'Shehab', 0)" class="btn-play">
                         <i class="fa-solid fa-play"></i>
                     </button>
                 </div>
@@ -139,11 +144,11 @@
                 <div class="img-wrapper">
                     <img src="assets/images/bugatti.jpg" onerror="this.src='https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=400&q=80'">
                 </div>
-                <h4 class="track-title">بوغاتي (Bugatti)</h4>
+                <h4 class="track-title" data-key="track2">بوغاتي (Bugatti)</h4>
                 <p class="track-artist">Shehab</p>
                 <div class="card-footer">
                     <span class="badge-tag">Single</span>
-                    <button onclick="playAudio('assets/audio/bugatti.mp3', 'بوغاتي (Bugatti)', 'Shehab', 1)" class="btn-play">
+                    <button onclick="playAudio('assets/audio/bugatti.mp3', 'Bugatti', 'Shehab', 1)" class="btn-play">
                         <i class="fa-solid fa-play"></i>
                     </button>
                 </div>
@@ -154,11 +159,11 @@
                 <div class="img-wrapper">
                     <img src="assets/images/casanova.jpg" onerror="this.src='https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=400&q=80'">
                 </div>
-                <h4 class="track-title">Casanova (كازانوفا)</h4>
+                <h4 class="track-title" data-key="track3">كازانوفا (Casanova)</h4>
                 <p class="track-artist">Shehab</p>
                 <div class="card-footer">
                     <span class="badge-tag cyan">Hit Track</span>
-                    <button onclick="playAudio('assets/audio/casanova.mp3', 'Casanova (كازانوفا)', 'Shehab', 2)" class="btn-play">
+                    <button onclick="playAudio('assets/audio/casanova.mp3', 'Casanova', 'Shehab', 2)" class="btn-play">
                         <i class="fa-solid fa-play"></i>
                     </button>
                 </div>
@@ -169,11 +174,11 @@
                 <div class="img-wrapper">
                     <img src="assets/images/gamarek.jpg" onerror="this.src='https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=400&q=80'">
                 </div>
-                <h4 class="track-title">جمارك (Gamarek)</h4>
+                <h4 class="track-title" data-key="track4">جمارك (Gamarek)</h4>
                 <p class="track-artist">Shehab</p>
                 <div class="card-footer">
                     <span class="badge-tag">Single</span>
-                    <button onclick="playAudio('assets/audio/gamarek.mp3', 'جمارك (Gamarek)', 'Shehab', 3)" class="btn-play">
+                    <button onclick="playAudio('assets/audio/gamarek.mp3', 'Gamarek', 'Shehab', 3)" class="btn-play">
                         <i class="fa-solid fa-play"></i>
                     </button>
                 </div>
@@ -184,11 +189,11 @@
                 <div class="img-wrapper">
                     <img src="assets/images/satamoni.jpg" onerror="this.src='https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=400&q=80'">
                 </div>
-                <h4 class="track-title">ستاموني (Satamoni)</h4>
+                <h4 class="track-title" data-key="track5">ستاموني (Satamoni)</h4>
                 <p class="track-artist">Shehab x DJ Totti</p>
                 <div class="card-footer">
                     <span class="badge-tag purple">Collab</span>
-                    <button onclick="playAudio('assets/audio/satamoni.mp3', 'ستاموني (Satamoni)', 'Shehab x DJ Totti', 4)" class="btn-play">
+                    <button onclick="playAudio('assets/audio/satamoni.mp3', 'Satamoni', 'Shehab x DJ Totti', 4)" class="btn-play">
                         <i class="fa-solid fa-play"></i>
                     </button>
                 </div>
@@ -199,11 +204,11 @@
                 <div class="img-wrapper">
                     <img src="assets/images/mrzmn.jpg" onerror="this.src='https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=400&q=80'">
                 </div>
-                <h4 class="track-title">مشروع "مرزمن" (Mrzmn)</h4>
+                <h4 class="track-title" data-key="track6">مشروع مرزمن (Mrzmn)</h4>
                 <p class="track-artist">Shehab x Elfy</p>
                 <div class="card-footer">
                     <span class="badge-tag pink">EP Album</span>
-                    <button onclick="playAudio('assets/audio/mrzmn.mp3', 'مشروع مرزمن (Mrzmn)', 'Shehab x Elfy', 5)" class="btn-play">
+                    <button onclick="playAudio('assets/audio/mrzmn.mp3', 'Mrzmn', 'Shehab x Elfy', 5)" class="btn-play">
                         <i class="fa-solid fa-play"></i>
                     </button>
                 </div>
@@ -214,23 +219,23 @@
 
     <!-- Collaborations Section -->
     <section id="collabs" class="section-container border-top">
-        <span class="sub-title">الشبكة والموسيقى</span>
-        <h2>التعاونات الموسيقية والمنتجين</h2>
+        <span class="sub-title" data-key="collabsSub">الشبكة والموسيقى</span>
+        <h2 data-key="collabsTitle">التعاونات الموسيقية والمنتجين</h2>
 
         <div class="grid-collabs">
             <div class="glass-card hover-card p-6 flex-row">
                 <div class="icon-box purple"><i class="fa-solid fa-compact-disc"></i></div>
                 <div>
-                    <h3>أبرز المنتجين (Producers)</h3>
-                    <p>تعاون مع كبار صناع الموسيقى مثل خالد (Khaled)، دي جي توتي (DJ Totti)، ومولوتوف (Molotof).</p>
+                    <h3 data-key="collab1Title">أبرز المنتجين (Producers)</h3>
+                    <p data-key="collab1Desc">تعاون مع كبار صناع الموسيقى مثل خالد (Khaled)، دي جي توتي (DJ Totti)، ومولوتوف (Molotof).</p>
                 </div>
             </div>
 
             <div class="glass-card hover-card p-6 flex-row">
                 <div class="icon-box pink"><i class="fa-solid fa-users"></i></div>
                 <div>
-                    <h3>تراكات ومشروعات مشتركة</h3>
-                    <p>شارك في أعمال وتراكات مشهورة مع ألفي (مشروع مرزمن) وعمر كيف وغيرهم.</p>
+                    <h3 data-key="collab2Title">تراكات ومشروعات مشتركة</h3>
+                    <p data-key="collab2Desc">شارك في أعمال وتراكات مشهورة مع ألفي (مشروع مرزمن) وعمر كيف وغيرهم.</p>
                 </div>
             </div>
         </div>
@@ -238,33 +243,36 @@
 
     <!-- Live Concerts Section -->
     <section id="live" class="section-container border-top">
-        <span class="sub-title">المسرح والجمهور</span>
-        <h2>الحفلات والنشاط الحي</h2>
+        <span class="sub-title" data-key="liveSub">المسرح والجمهور</span>
+        <h2 data-key="liveTitle">الحفلات والنشاط الحي</h2>
 
         <div class="grid-collabs">
             <div class="glass-card hover-card p-6">
-                <span class="tag-label amber"><i class="fa-solid fa-umbrella-beach"></i> الساحل الشمالي</span>
+                <span class="tag-label amber"><i class="fa-solid fa-umbrella-beach"></i> <span data-key="live1Tag">الساحل الشمالي</span></span>
                 <h3>The Rap Arena</h3>
-                <p>مشاركات وحفلات جماهيرية كبرى بالاشتراك مع عفروتو وديسكو مصر.</p>
+                <p data-key="live1Desc">مشاركات وحفلات جماهيرية كبرى بالاشتراك مع عفروتو وديسكو مصر.</p>
             </div>
 
             <div class="glass-card hover-card p-6">
-                <span class="tag-label cyan"><i class="fa-solid fa-city"></i> القاهرة والإسكندرية</span>
+                <span class="tag-label cyan"><i class="fa-solid fa-city"></i> <span data-key="live2Tag">القاهرة والإسكندرية</span></span>
                 <h3>BRO Event - الفاميلي بارك</h3>
-                <p>حضور مسرحي قوي وتفاعل حي متواصل مع الجمهور والشباب.</p>
+                <p data-key="live2Desc">حضور مسرحي قوي وتفاعل حي متواصل مع الجمهور والشباب.</p>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer (Upgraded Signature & Title) -->
     <footer class="footer">
         <div class="footer-container">
             <div>
                 <p class="logo-text">SHEHAB</p>
-                <p class="footer-sub">موقع غير رسمي إهداء من المعجبين والجمهور</p>
+                <p class="footer-sub" data-key="footerTag">المنصة المخصصة لاستعراض تجربة الموسيقى والأعمال</p>
             </div>
             <div class="developer-signature">
-                <p class="copy">تصميم وتطوير <span class="dev-name">أمير فايز</span> © 2026</p>
+                <p class="copy">
+                    <span data-key="devText">Designed & Developed by</span> 
+                    <span class="dev-name">Amir Fayez | أمير فايز</span> © 2026
+                </p>
             </div>
         </div>
     </footer>
@@ -272,23 +280,21 @@
     <!-- Advanced Player Bar Bottom -->
     <div id="playerBar" class="player-bar glass-card">
         
-        <!-- Track Info & Visualizer -->
         <div class="player-info">
             <div class="track-thumb-wrapper">
                 <img id="nowPlayingThumb" src="assets/images/shehab-hero.jpg" onerror="this.src='https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=100&q=80'" alt="Track Art">
             </div>
             <div class="track-details">
                 <div class="title-equalizer">
-                    <p id="nowPlayingTitle" class="track-name">اختر تراكاً للاستماع</p>
+                    <p id="nowPlayingTitle" class="track-name" data-key="playerSelect">اختر تراكاً للاستماع</p>
                     <div class="equalizer-bars" id="eqBars">
                         <span></span><span></span><span></span>
                     </div>
                 </div>
-                <p id="nowPlayingArtist" class="artist-name">شهاب - Shehab</p>
+                <p id="nowPlayingArtist" class="artist-name">Shehab — شهاب</p>
             </div>
         </div>
 
-        <!-- Center Controls & Progress Bar -->
         <div class="player-center-controls">
             <div class="control-buttons">
                 <button onclick="playPrevTrack()" class="btn-ctrl" title="التراك السابق">
@@ -324,10 +330,8 @@
             </div>
         </div>
 
-        <!-- Hidden Audio Element -->
         <audio id="mainAudio" preload="metadata"></audio>
 
-        <!-- Developer Badge in Player -->
         <div class="player-extra">
             <span class="player-dev-badge">Designed by Amir Fayez</span>
         </div>
