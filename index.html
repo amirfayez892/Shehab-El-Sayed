@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="dark-theme">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHEHAB | شهاب - منصة الموسيقى الرسمية</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Cairo Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="brand-logo">
+                <span class="logo-text">SHEHAB</span>
+                <span class="badge">طبيب الودن</span>
+            </div>
+            
+            <nav class="nav-links">
+                <a href="#about">عن شهاب</a>
+                <a href="#tracks">التراكات</a>
+                <a href="#collabs">التعاونات</a>
+                <a href="#live">الحفلات</a>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Theme Toggle Button -->
+                <button id="themeToggle" class="btn-theme" title="تغيير الوضع">
+                    <i class="fa-solid fa-moon" id="themeIcon"></i>
+                </button>
+
+                <a href="#tracks" class="btn-primary">
+                    <i class="fa-solid fa-play"></i> استمع للـ Vibing
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-text">
+            <div class="tag">
+                <i class="fa-solid fa-compass"></i> ابن سيدي بشر — الإسكندرية (30 مارس 1999)
+            </div>
+            <h1>شهاب السيد <br><span class="glow-title">"شهاب الديب"</span></h1>
+            <p>
+                رائد مزج موسيقى الـ Trap الهادئة مع ألحان الـ R&B السلسة في مشهد الراب المصري، ومبتكر حالة الـ Mood والـ Chill المفضلة للاسترخاء والقيادة.
+            </p>
+            <div class="hero-btns">
+                <a href="#tracks" class="btn-accent">
+                    <i class="fa-solid fa-music"></i> استكشف التراكات
+                </a>
+            </div>
+        </div>
+        
+        <!-- Hero Image Card -->
+        <div class="hero-card-container">
+            <div class="hero-card glass-card">
+                <img src="assets/images/shehab-hero.jpg" onerror="this.src='https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80'" alt="شهاب" class="hero-img">
+                <div class="hero-card-info glass-card">
+                    <div>
+                        <span class="sub-text">الانطلاقة الحقيقية</span>
+                        <p class="main-text">2019 — My Zone & 7asana</p>
+                    </div>
+                    <span class="genre-badge">Trap / R&B</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bio Section (Large Row Cards) -->
+    <section id="about" class="section-container">
+        <div class="grid-about">
+            <div class="glass-card hover-card bio-card">
+                <div class="icon-box cyan"><i class="fa-solid fa-user-ninja"></i></div>
+                <div class="bio-content">
+                    <h3>الهوية والألقاب</h3>
+                    <p>يُعرف بـ <strong>"طبيب الودن"</strong> و<strong>"شهاب الديب"</strong>. بدأ مشواره الفني على الإنترنت عام 2019 وحظي بإنتباه واسع بفضل كاريزما صوته واستخدامه المتقن لتقنية الـ Auto-Tune.</p>
+                </div>
+            </div>
+
+            <div class="glass-card hover-card bio-card">
+                <div class="icon-box purple"><i class="fa-solid fa-sliders"></i></div>
+                <div class="bio-content">
+                    <h3>الأسلوب الموسيقي</h3>
+                    <p>دمج موسيقى التراپ (Trap) الهادئة مع ألحان الـ R&B السلسة، معتمداً على تهيئة "المود" أو الحالة المزاجية للمستمع التي أصبحت الخيار المفضل أثناء القيادة والاسترخاء.</p>
+                </div>
+            </div>
+
+            <div class="glass-card hover-card bio-card">
+                <div class="icon-box pink"><i class="fa-solid fa-bolt"></i></div>
+                <div class="bio-content">
+                    <h3>البداية والإنطلاقة</h3>
+                    <p>انطلق بقوة عبر تراك "My Zone"، ثم أعقبها بأغنية "7asana" التي مزج فيها بين العربية والإنجليزية بطريقة مبتكرة أحدثت تفاعلاً واسعاً داخل المشهد.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tracks Section -->
+    <section id="tracks" class="section-container">
+        <div class="section-header">
+            <div>
+                <span class="sub-title">المكتبة الموسيقية</span>
+                <h2>أشهر تراكات شهاب</h2>
+            </div>
+            <div class="search-box">
+                <input type="text" id="searchInput" onkeyup="filterTracks()" placeholder="بحث عن تراك...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+
+        <div id="tracksGrid" class="grid-tracks">
+
+            <!-- 1. 3l3mom -->
+            <div class="track-card glass-card hover-card">
+                <div class="img-wrapper">
+                    <img src="assets/images/3l3mom.jpg" onerror="this.src='https://images.unsplash.com/photo-1598387993441-a364f854c3e1?auto=format&fit=crop&w=400&q=80'">
+                </div>
+                <h4 class="track-title">عالعموم (3l3mom)</h4>
+                <p class="track-artist">Shehab</p>
+                <div class="card-footer">
+                    <span class="badge-tag cyan">Single</span>
+                    <button onclick="playAudio('assets/audio/3l3mom.mp3', 'عالعموم (3l3mom)', 'Shehab', 0)" class="btn-play">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 2. Bugatti -->
+            <div class="track-card glass-card hover-card">
+                <div class="img-wrapper">
+                    <img src="assets/images/bugatti.jpg" onerror="this.src='https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=400&q=80'">
+                </div>
+                <h4 class="track-title">بوغاتي (Bugatti)</h4>
+                <p class="track-artist">Shehab</p>
+                <div class="card-footer">
+                    <span class="badge-tag">Single</span>
+                    <button onclick="playAudio('assets/audio/bugatti.mp3', 'بوغاتي (Bugatti)', 'Shehab', 1)" class="btn-play">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 3. Casanova -->
+            <div class="track-card glass-card hover-card">
+                <div class="img-wrapper">
+                    <img src="assets/images/casanova.jpg" onerror="this.src='https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=400&q=80'">
+                </div>
+                <h4 class="track-title">Casanova (كازانوفا)</h4>
+                <p class="track-artist">Shehab</p>
+                <div class="card-footer">
+                    <span class="badge-tag cyan">Hit Track</span>
+                    <button onclick="playAudio('assets/audio/casanova.mp3', 'Casanova (كازانوفا)', 'Shehab', 2)" class="btn-play">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 4. Gamarek -->
+            <div class="track-card glass-card hover-card">
+                <div class="img-wrapper">
+                    <img src="assets/images/gamarek.jpg" onerror="this.src='https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=400&q=80'">
+                </div>
+                <h4 class="track-title">جمارك (Gamarek)</h4>
+                <p class="track-artist">Shehab</p>
+                <div class="card-footer">
+                    <span class="badge-tag">Single</span>
+                    <button onclick="playAudio('assets/audio/gamarek.mp3', 'جمارك (Gamarek)', 'Shehab', 3)" class="btn-play">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 5. Satamoni -->
+            <div class="track-card glass-card hover-card">
+                <div class="img-wrapper">
+                    <img src="assets/images/satamoni.jpg" onerror="this.src='https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=400&q=80'">
+                </div>
+                <h4 class="track-title">ستاموني (Satamoni)</h4>
+                <p class="track-artist">Shehab x DJ Totti</p>
+                <div class="card-footer">
+                    <span class="badge-tag purple">Collab</span>
+                    <button onclick="playAudio('assets/audio/satamoni.mp3', 'ستاموني (Satamoni)', 'Shehab x DJ Totti', 4)" class="btn-play">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 6. Mrzmn -->
+            <div class="track-card glass-card hover-card">
+                <div class="img-wrapper">
+                    <img src="assets/images/mrzmn.jpg" onerror="this.src='https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=400&q=80'">
+                </div>
+                <h4 class="track-title">مشروع "مرزمن" (Mrzmn)</h4>
+                <p class="track-artist">Shehab x Elfy</p>
+                <div class="card-footer">
+                    <span class="badge-tag pink">EP Album</span>
+                    <button onclick="playAudio('assets/audio/mrzmn.mp3', 'مشروع مرزمن (Mrzmn)', 'Shehab x Elfy', 5)" class="btn-play">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Collaborations Section -->
+    <section id="collabs" class="section-container border-top">
+        <span class="sub-title">الشبكة والموسيقى</span>
+        <h2>التعاونات الموسيقية والمنتجين</h2>
+
+        <div class="grid-collabs">
+            <div class="glass-card hover-card p-6 flex-row">
+                <div class="icon-box purple"><i class="fa-solid fa-compact-disc"></i></div>
+                <div>
+                    <h3>أبرز المنتجين (Producers)</h3>
+                    <p>تعاون مع كبار صناع الموسيقى مثل خالد (Khaled)، دي جي توتي (DJ Totti)، ومولوتوف (Molotof).</p>
+                </div>
+            </div>
+
+            <div class="glass-card hover-card p-6 flex-row">
+                <div class="icon-box pink"><i class="fa-solid fa-users"></i></div>
+                <div>
+                    <h3>تراكات ومشروعات مشتركة</h3>
+                    <p>شارك في أعمال وتراكات مشهورة مع ألفي (مشروع مرزمن) وعمر كيف وغيرهم.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Concerts Section -->
+    <section id="live" class="section-container border-top">
+        <span class="sub-title">المسرح والجمهور</span>
+        <h2>الحفلات والنشاط الحي</h2>
+
+        <div class="grid-collabs">
+            <div class="glass-card hover-card p-6">
+                <span class="tag-label amber"><i class="fa-solid fa-umbrella-beach"></i> الساحل الشمالي</span>
+                <h3>The Rap Arena</h3>
+                <p>مشاركات وحفلات جماهيرية كبرى بالاشتراك مع عفروتو وديسكو مصر.</p>
+            </div>
+
+            <div class="glass-card hover-card p-6">
+                <span class="tag-label cyan"><i class="fa-solid fa-city"></i> القاهرة والإسكندرية</span>
+                <h3>BRO Event - الفاميلي بارك</h3>
+                <p>حضور مسرحي قوي وتفاعل حي متواصل مع الجمهور والشباب.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div>
+                <p class="logo-text">SHEHAB</p>
+                <p class="footer-sub">موقع غير رسمي إهداء من المعجبين والجمهور</p>
+            </div>
+            <div class="developer-signature">
+                <p class="copy">تصميم وتطوير <span class="dev-name">أمير فايز</span> © 2026</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Advanced Player Bar Bottom -->
+    <div id="playerBar" class="player-bar glass-card">
+        
+        <!-- Track Info & Visualizer -->
+        <div class="player-info">
+            <div class="track-thumb-wrapper">
+                <img id="nowPlayingThumb" src="assets/images/shehab-hero.jpg" onerror="this.src='https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=100&q=80'" alt="Track Art">
+            </div>
+            <div class="track-details">
+                <div class="title-equalizer">
+                    <p id="nowPlayingTitle" class="track-name">اختر تراكاً للاستماع</p>
+                    <div class="equalizer-bars" id="eqBars">
+                        <span></span><span></span><span></span>
+                    </div>
+                </div>
+                <p id="nowPlayingArtist" class="artist-name">شهاب - Shehab</p>
+            </div>
+        </div>
+
+        <!-- Center Controls & Progress Bar -->
+        <div class="player-center-controls">
+            <div class="control-buttons">
+                <button onclick="playPrevTrack()" class="btn-ctrl" title="التراك السابق">
+                    <i class="fa-solid fa-backward-step"></i>
+                </button>
+
+                <button onclick="rewind10()" class="btn-ctrl" title="تأخير 10 ثوانٍ">
+                    <i class="fa-solid fa-rotate-left"></i>
+                    <span class="ctrl-step">10s</span>
+                </button>
+
+                <button onclick="togglePlay()" id="playBtn" class="btn-player">
+                    <i class="fa-solid fa-play" id="playIcon"></i>
+                </button>
+
+                <button onclick="forward10()" class="btn-ctrl" title="تقديم 10 ثوانٍ">
+                    <i class="fa-solid fa-rotate-right"></i>
+                    <span class="ctrl-step">10s</span>
+                </button>
+
+                <button onclick="playNextTrack()" class="btn-ctrl" title="التراك التالي">
+                    <i class="fa-solid fa-forward-step"></i>
+                </button>
+            </div>
+
+            <div class="progress-container">
+                <span id="currentTime" class="time-label">0:00</span>
+                <div class="seek-bar-wrapper">
+                    <input type="range" id="seekBar" value="0" min="0" max="100" step="0.1">
+                    <div id="progressBarFill" class="progress-bar-fill"></div>
+                </div>
+                <span id="durationTime" class="time-label">0:00</span>
+            </div>
+        </div>
+
+        <!-- Hidden Audio Element -->
+        <audio id="mainAudio" preload="metadata"></audio>
+
+        <!-- Developer Badge in Player -->
+        <div class="player-extra">
+            <span class="player-dev-badge">Designed by Amir Fayez</span>
+        </div>
+
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
