@@ -501,3 +501,135 @@ body {
     padding: 3px 8px;
     border-radius: 12px;
 }
+/* ==========================================
+   Responsive Fixes for Mobile Devices
+   ========================================== */
+
+@media (max-width: 768px) {
+    /* Navbar Adjustment */
+    .nav-container {
+        padding: 0 16px;
+    }
+    
+    .nav-links {
+        display: none; /* إخفاء الروابط للتبسيط على الموبايل */
+    }
+
+    /* Hero Section */
+    .hero-section {
+        flex-direction: column;
+        margin-top: 100px;
+        gap: 30px;
+        padding: 0 16px;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .hero-card-container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero-img {
+        height: 300px;
+    }
+
+    /* Grid Adjustments for Cards & Images */
+    .grid-about {
+        grid-template-columns: 1fr;
+    }
+
+    .bio-card {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .grid-tracks {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 12px;
+    }
+
+    .track-card {
+        padding: 10px;
+    }
+
+    .img-wrapper {
+        height: 130px; /* ضبط ارتفاع الصور لتظهر كاملة وبشكل أنيق */
+    }
+
+    .track-title {
+        font-size: 14px;
+    }
+
+    /* Section Headers & Search */
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+
+    /* 🎵 Full Mobile Audio Player Bar Fix 🎵 */
+    .player-bar {
+        padding: 10px 12px;
+        flex-direction: column;
+        gap: 8px;
+        bottom: 0;
+    }
+
+    .player-info {
+        width: 100%;
+        justify-content: flex-start;
+        min-width: unset;
+    }
+
+    .track-thumb-wrapper {
+        width: 40px;
+        height: 40px;
+    }
+
+    .track-name {
+        font-size: 13px;
+    }
+
+    .player-center-controls {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .control-buttons {
+        gap: 12px;
+    }
+
+    .btn-player {
+        width: 36px;
+        height: 36px;
+        font-size: 14px;
+    }
+
+    .btn-ctrl {
+        font-size: 13px;
+        padding: 2px 6px;
+    }
+
+    .progress-container {
+        gap: 6px;
+    }
+
+    .time-label {
+        font-size: 10px;
+        min-width: 26px;
+    }
+
+    .player-extra {
+        display: none; /* إخفاء الشارة الجانبية لتوفير مساحة لشريط الأغنية */
+    }
+}
